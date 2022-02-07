@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.util.Scanner;
 import java.util.function.Function;
 
+//Realiza una suma, introduciendo el primer y segundo número, y te devuelve el resultado
 public class FuncionSuma implements Function<Scanner, Void>{
 
     @Override

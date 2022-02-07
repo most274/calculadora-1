@@ -6,12 +6,13 @@ import java.util.function.Function;
 
 public class Menu {
 
+    //Atributos del menú
     private Scanner sc;
     private String titulo;
     private String input;
     private Map<String, ItemMenu> mapItemMenu;
     
-
+    //Constructor menú
     public Menu(String titulo, String input, Map<String, ItemMenu> mapItemMenu, Scanner sc) {
 
         this.sc = sc;
@@ -21,6 +22,7 @@ public class Menu {
 
     }
 
+    //Renderiza el menú: título, opciones y el input
     public void renderiza() {
 
         System.out.println(titulo);
@@ -33,6 +35,7 @@ public class Menu {
 
     }
 
+    //Se renderiza el menú, se introduce la opción y se devuelve el resultado
     public void bucle() throws ExitMenuException {
 
         

@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.util.Scanner;
 import java.util.function.Function;
 
+//Sirve para que el usuario introduzca el apotema y el perimetro, y calcule el area
 public class FuncionArea implements Function<Scanner, Void>{
 
     @Override

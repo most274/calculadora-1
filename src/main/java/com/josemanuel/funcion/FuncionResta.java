@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.function.Function;
 
 
-
+//Realiza una resta, introduciendo el primer y segundo número, y te devuelve el resultado
 public class FuncionResta implements Function<Scanner, Void>{
 
     @Override

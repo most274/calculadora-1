@@ -21,6 +21,7 @@ public class SuperCalculadoraTest {
     private ByteArrayInputStream testIn;
     private ByteArrayOutputStream testOut;
 
+    //Antes de iniciar el test
     @BeforeEach
     public void setUpOutput() {
         testOut = new ByteArrayOutputStream();
@@ -36,6 +37,8 @@ public class SuperCalculadoraTest {
         return testOut.toString();
     }
 
+    //Se realiza el test de problemas aritméticos
+    //El test será exitoso si el resultado es 43
     @Test
     @DisplayName("Test entrada a Menú de Aritmética, opción A")
     public void testCasoMenuAritmetica() {
@@ -47,6 +50,7 @@ public class SuperCalculadoraTest {
         
     }
 
+    //Después del test
     @AfterEach
     public void restoreSystemInputOutput() {
         System.setIn(systemIn);
